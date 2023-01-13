@@ -7,13 +7,14 @@ import {
   HStack,
   Stack,
   Icon,
+  StackProps,
 } from "@chakra-ui/react";
 import { CheckIcon } from "../icons/Icons";
 
 const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;
   return (
-    <HStack as="li" spacing="5" {...rest} align='flex-start'>
+    <HStack as="li" spacing="5" {...rest} align="flex-start">
       <Icon as={CheckIcon} w="6" h="6" />
       <Text>{children}</Text>
     </HStack>
