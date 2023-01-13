@@ -1,3 +1,4 @@
+import { ElementType } from "react";
 import {
   Box,
   Flex,
